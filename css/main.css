@@ -157,8 +157,8 @@ a { text-decoration: none;}
 #welcome .left { width: 300px; border-right: 2px dashed black; left:0; }
 #welcome .left table { margin: 0 auto; border-spacing: 0; border: 3px solid #000; position: relative; top: 12px; }
 #welcome .left table td { font-family: SimHei, Arial, Helvetica, sans-serif; text-align: center; width: 240px; }
-#welcome .left table thead { font-size: 72px; color: #000; }
-#welcome .left table tbody { background-color:#000; font-size: 48px; color: #FFF; }
+#welcome .left table thead { font-size: 72px; background-color: #FFF; color: #000; }
+#welcome .left table tbody { font-size: 48px; background-color: #000; color: #FFF; }
 #welcome .left table .online {
 	position: absolute;
 	right: -8px; top: -5px;
