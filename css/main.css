@@ -87,14 +87,14 @@ a { text-decoration: none;}
         url("img/horizontal-line-2px.gif"),
         url("img/vertical-line-1px.gif"),
         url("img/vertical-line-2px.gif"),
-        url("img/dots-1px.png"),
-        url("img/dots-2px.png"),
-        url("img/cross-1px.png"),
-        url("img/cross-2px.png"),
+        url("img/dots-1px.gif"),
+        url("img/dots-2px.gif"),
+        url("img/cross-1px.gif"),
+        url("img/cross-2px.gif"),
         url("img/boxes-5px.png"),
         url("img/white-grid-45px.png"),
         url("img/convergence-45px.png"),
-        url("img/breathing-block.png");
+        url("img/breathing-block.gif");
     width: 0;
     height: 0;
     display: inline-block;
