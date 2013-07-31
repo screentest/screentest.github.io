@@ -90,14 +90,14 @@ a { text-decoration: none;}
 #test-solid-white{ background-color: #FFF; }
 #test-solid-black { background-color: #000; }
 
-#test-horizontal-line-1px { background: #000 url("img/horizontal-line-1px.png") repeat center center; }
-#test-horizontal-line-2px { background: #000 url("img/horizontal-line-2px.png") repeat center center; }
-#test-vertical-line-1px { background: #000 url("img/vertical-line-1px.png") repeat center center; }
-#test-vertical-line-2px { background: #000 url("img/vertical-line-2px.png") repeat center center; }
-#test-dots-1px { background: #000 url("img/dots-1px.png") repeat center center; }
-#test-dots-2px { background: #000 url("img/dots-2px.png") repeat center center; }
-#test-cross-1px { background: #000 url("img/cross-1px.png") repeat center center; }
-#test-cross-2px { background: #000 url("img/cross-2px.png") repeat center center; }
+#test-horizontal-line-1px { background: #000 url("img/horizontal-line-1px.gif") repeat center center; }
+#test-horizontal-line-2px { background: #000 url("img/horizontal-line-2px.gif") repeat center center; }
+#test-vertical-line-1px { background: #000 url("img/vertical-line-1px.gif") repeat center center; }
+#test-vertical-line-2px { background: #000 url("img/vertical-line-2px.gif") repeat center center; }
+#test-dots-1px { background: #000 url("img/dots-1px.gif") repeat center center; }
+#test-dots-2px { background: #000 url("img/dots-2px.gif") repeat center center; }
+#test-cross-1px { background: #000 url("img/cross-1px.gif") repeat center center; }
+#test-cross-2px { background: #000 url("img/cross-2px.gif") repeat center center; }
 
 #test-pattern {
 	background-color: #000;
