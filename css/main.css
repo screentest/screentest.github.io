@@ -81,6 +81,25 @@ a { text-decoration: none;}
 
 #main { width: 100%; height: 100%; position: relative; }	
 
+#preloader {
+	background:
+        url("img/horizontal-line-1px.gif"),
+        url("img/horizontal-line-2px.gif"),
+        url("img/vertical-line-1px.gif"),
+        url("img/vertical-line-2px.gif"),
+        url("img/dots-1px.png"),
+        url("img/dots-2px.png"),
+        url("img/cross-1px.png"),
+        url("img/cross-2px.png"),
+        url("img/boxes-5px.png"),
+        url("img/white-grid-45px.png"),
+        url("img/convergence-45px.png"),
+        url("img/breathing-block.png");
+    width: 0;
+    height: 0;
+    display: inline-block;
+}
+
 #test-solid-red { background-color: #F00; }
 #test-solid-green { background-color: #0F0; }
 #test-solid-blue { background-color: #00F; }
