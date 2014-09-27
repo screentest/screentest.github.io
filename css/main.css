@@ -227,6 +227,7 @@ a { text-decoration: none;}
 }
 
 #welcome .right { width: 420px; right:0; padding: 12px; }
+#welcome .right .disclaimer { display: none; }
 
 #resolution_tips {
     background-color: rgba(0, 0, 0, 0.75);
