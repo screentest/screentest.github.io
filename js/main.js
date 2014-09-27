@@ -100,7 +100,7 @@ $(document).ready(function(){
 	$(window).resize(function(e) {
 		$("#resolution").html(screen.width+"x"+screen.height+"x"+screen.colorDepth);
 		$("#bodysize").html($("#welcome").width()+"x"+$("#welcome").height());
-		$("#resolution_tips").text($("#body").width()+"x"+$("#body").height()).show();
+		$("#resolution_tips").text($("#body").width()+"x"+$("#container").height()).show();
 		last_resize = $.now();
 		if (resolution_tips_daemon == 0) {
 			resolution_tips_daemon = setInterval(function(){
