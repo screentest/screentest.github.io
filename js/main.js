@@ -26,9 +26,7 @@ $(document).ready(function(){
 		var target_left  = ($("#container").width()-$btn.width())/2;
 		var $wrapper = $("#control_buttons");
 		var pos = $wrapper.position();
-		console.log(pos);
 		pos.left += target_left-current_left;
-		console.log(pos);
 		$wrapper.css("left", pos.left);
 	}
 		
@@ -65,6 +63,7 @@ $(document).ready(function(){
 			case 32: // space
 				go(current_slide+1); break;
 			case 27: // esc
+				$(document).fullScreen(false);
 				go(0);
 		}
 	});
@@ -115,9 +114,15 @@ $(document).ready(function(){
 	});	
 
 	$("#start").click(function(){
+		$(document).fullScreen(true);
 		go(1);
 	});
-	
+
+	$("#stop").click(function(){
+		$(document).fullScreen(false);
+		go(0);
+	});
+
 	go(0);
 	
 });

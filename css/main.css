@@ -23,13 +23,22 @@ a { text-decoration: none;}
 .control_hide .top { top: -40px; }
 .control_show .top { top: 0;}
 #control .top { height: 40px; color: #FFF; }
-#control .top  .title {
+#control .top .title {
     font-family: simhei;
     font-size: 24px;
     line-height: 40px;
     margin: 0 20px;
 }
-#control .top  .description { font-size: 12px; }
+#control .top .description { font-size: 12px; }
+#control .top .close {
+    background: url(img/control-close.png);
+    width: 20px;
+    height: 20px;
+    right: 20px;
+    top: 10px;
+    position: absolute;
+    cursor: pointer;
+}
 
 .control_show .bottom { bottom: 0;}
 .control_hide .bottom { bottom: -80px; }
@@ -227,7 +236,7 @@ a { text-decoration: none;}
 }
 
 #welcome .right { width: 420px; right:0; padding: 12px; }
-#welcome .right .disclaimer { display: none; }
+#welcome .right .disclaimer { font-size: 9px; color: #DDD; }
 
 #resolution_tips {
     background-color: rgba(0, 0, 0, 0.75);

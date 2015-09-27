@@ -9,6 +9,7 @@
 <link href="css/main.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script><!-- via http://developer.baidu.com/wiki/index.php?title=docs/cplat/libs -->
 <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/jquery.fullscreen.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body id="body">
@@ -22,7 +23,7 @@
 						<tbody><tr><td>测试机</td></tr></tbody>
 						<tfoot>
 							<tr><td class="online">在线</td></tr>
-							<tr><td class="version">v1.3</td></tr>
+							<tr><td class="version">v1.5</td></tr>
 						</tfoot>
 					</table>
 					<a class="button start" id="start">立即开始</a>
@@ -33,9 +34,9 @@
 						<p><span class="title">当前分辨率：</span><span class="value" id="resolution"></span></p>
 						<p><span class="title">内容分辨率：</span><span class="value" id="bodysize"></span></p>
 						<p>分辨率信息仅供参考，一些浏览器在缩放后无法提供正确的分辨率值。</p>
-						<p>请关闭浏览器缩放功能(<a href="#">如何关闭</a>)。</p>
-						<p>开始测试前请将浏览器页面全屏(快捷键F11)。</p>
-						<p class="disclaimer">本测试工具通常不会对您的显示设备有任何伤害，且不能代替专业的检测器械。通常显示设备中有高压，非专业人士请不要自行维修您的显示设备。本工具的测试接过仅供参考，对本站的任何内容以及产生的结果不承担任何保证或责任。</p>
+						<p>请关闭浏览器缩放功能(<a href="image/zoom.png" target="_blank">如何关闭</a>)。</p>
+						<p>如果不能自动全屏，请手工将浏览器全屏(快捷键F11)。</p>
+						<p class="disclaimer">本测试工具通常不会对您的显示设备有任何伤害，且不能代替专业的检测器械。通常显示设备中有高压，非专业人士请不要自行维修您的显示设备。本工具的测试结果仅供参考，对本站的任何内容以及产生的结果不承担任何保证或责任。</p>
 					</div>
                     <div id="preloader"></div>
 				</div>
@@ -206,6 +207,7 @@
 		<div class="panel top">
 			<span class="title"></span>
 			<span class="description"></span>
+			<span class="close" id="stop"></span>
 		</div>
 		<div class="panel bottom">
 			<div class="wrapper" id="control_buttons"></div>
@@ -225,4 +227,5 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 <!-- 2013-07-30 v1.2 将欢迎页从一个顶级元素降级成一个slide。添加滚轮翻页，和键盘事件监听。添加MacOS风格的resize提示框。文案优化 发布！！！！ -->
 <!-- 2013-07-31 v1.3 加入preloader加快客户端载入测试图片的速度！ -->
 <!-- 2014-08-15 v1.4 使用百度托管的CDN加快jquery的加载速度 -->
+<!-- 2015-09-24 v1.5 增加浏览器全屏API支持，以后就不用手动F11全屏了 -->
 <!-- master -->
