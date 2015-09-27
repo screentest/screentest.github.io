@@ -31,6 +31,9 @@ $(document).ready(function(){
 	}
 		
 	var go = function(i) {
+		if (i == slide.length) {
+			i = 0;
+		}
 		if (slide.length>0 && i>=0 && i<slide.length) {
 			location.hash = slide[i].id;
 			current_slide = i;
