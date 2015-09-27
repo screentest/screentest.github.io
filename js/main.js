@@ -51,6 +51,9 @@ $(document).ready(function(){
 	}).bind("click", function(e) {
 		if (lock) return;
 		go(current_slide+1);
+	}).bind("dblclick", function(e) {
+		$(document).fullScreen(false);
+		go(0);
 	});
 	
 	$(document).keyup(function(e) {
