@@ -31,10 +31,6 @@ $(document).ready(function(){
 	}
 		
 	var go = function(i) {
-		if (i == slide.length) {
-			$(document).fullScreen(false);
-			i = 0;
-		}
 		if (slide.length>0 && i>=0 && i<slide.length) {
 			location.hash = slide[i].id;
 			current_slide = i;
@@ -54,7 +50,12 @@ $(document).ready(function(){
 		}
 	}).bind("click", function(e) {
 		if (lock) return;
-		go(current_slide+1);
+		if (current_slide + 1 == slide.length) {
+			$(document).fullScreen(false);
+			go(0);
+		} else {
+			go(current_slide+1);
+        }
 	});
 	
 	$(document).keyup(function(e) {
