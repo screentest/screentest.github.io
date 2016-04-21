@@ -3,8 +3,8 @@ $(document).ready(function(){
 	$("#resolution").html(screen.width+"x"+screen.height+"x"+screen.colorDepth);
 	$("#bodysize").html($("#welcome").width()+"x"+$("#welcome").height());
 
-	var slide = new Array();
-	var current_slide = 0;
+	slide = new Array();
+	current_slide = 0;
 	var lock = 1;
 			
 	$("#main li").each(function(i){
@@ -30,14 +30,14 @@ $(document).ready(function(){
 		$wrapper.css("left", pos.left);
 	}
 		
-	var go = function(i) {
+	go = function(i) {
 		if (slide.length>0 && i>=0 && i<slide.length) {
             // location.hash = slide[i].id;
-            $(".slide").addClass("hide");
-            $("#" + slide[current_slide].id).removeClass("hide");
 			current_slide = i;
 			$("#control .top .title").text(slide[i].title);
 			$("#control .top .description").text(slide[i].description);
+            $(".slide").addClass("hide");
+            $("#" + slide[current_slide].id).removeClass("hide");
 		}
 		setTimeout(function(){lock=(i==0);}, 100);
 		adjust_control();
