@@ -6,7 +6,7 @@
 <meta name="keywords" content="在线屏幕测试,坏点检测,坏点测试软件,坏点测试图片,坏点修复,显示器坏点,屏幕坏点,测试屏幕坏点,投影仪测试,DisplayX,屏幕保护" />
 <meta name="description" content="国内第一家免费在线屏幕测试工具，汇集专业的屏幕测试环节，对您的显示设备做一次全面的体检。" />
 <meta http-equiv="Cache-Control" content="no-transform" /><!-- 禁止百度转码 -->
-<title>在线屏幕测试</title>
+<title>国内首家在线屏幕测试网站 - 屏幕检测工具 - 显示器检测软件 - 手机屏幕测试图片</title>
 <link href="css/main.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script><!-- via http://developer.baidu.com/wiki/index.php?title=docs/cplat/libs -->
 <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
@@ -31,6 +31,7 @@
 				</div>
 				<div class="top right">
 					<div class="technical">
+                        <h1>在线屏幕测试</h1>
 						<p>想知道屏幕是否有缺陷？在线给显示器做个体检吧！本站提供的检查项目包括：纯色、漏光测试、干扰测试、对焦、呼吸效应、对比度、色阶、饱和度。通过本站可以全面的测试显示器的质量和水平。</p>
 						<p><span class="title">当前分辨率：</span><span class="value" id="resolution"></span></p>
 						<p><span class="title">内容分辨率：</span><span class="value" id="bodysize"></span></p>
@@ -38,19 +39,20 @@
 						<p>请关闭浏览器缩放功能(<a href="image/zoom.png" target="_blank">如何关闭</a>)。</p>
 						<p>如果不能自动全屏，请手工将浏览器全屏(快捷键F11)。</p>
 						<p class="disclaimer">本测试工具通常不会对您的显示设备有任何伤害，且不能代替专业的检测器械。通常显示设备中有高压，非专业人士请不要自行维修您的显示设备。本工具的测试结果仅供参考，对本站的任何内容以及产生的结果不承担任何保证或责任。</p>
+                        <p class="seo">本站专注于<strong>屏幕测试</strong>、<strong>屏幕检测</strong>、<strong>显示器检测</strong>、<strong>显示器测试</strong>、<strong>在线屏幕测试</strong>、<strong>在线屏幕检测</strong>、<strong>屏幕测试软件</strong>、<strong>显示器检测软件</strong>、<strong>漏光检测</strong>、<strong>屏幕检测工具</strong>、<strong>显示器检测</strong>、<strong>屏幕坏点检测工具</strong>、<strong>显示器的测试工具</strong>等服务，且不能代替专业的检测器械。通常显示设备中有高压，非专业人士请不要自行维修您的显示设备。本工具的测试结果仅供参考，对本站的任何内容以及产生的结果不承担任何保证或责任。<img src="image/screentest.jpg" height="8" alt="专业屏幕检测工具" /></p>
 					</div>
                     <div id="preloader"></div>
 				</div>
 			</div>
 		</li>
+		<li data-title="纯白色" data-desc="除了用于测试坏点外，纯白屏通常用于测试显示器的亮度是否均衡，以及是否有不明显的色块存在。" class="slide test" id="test-solid-white"></li>
+        <li data-title="纯黑色" data-desc="除了用于测试坏点外，纯黑屏还常用于漏光测试水平。" class="slide test" id="test-solid-black"></li>
 		<li data-title="纯红色" data-desc="通常LCD显示器偶尔会有暗点(永远保持黑色)，请检查每个像素。注意屏幕上的灰尘有可能会被误认为坏点。" class="slide test" id="test-solid-red"></li>
 		<li data-title="纯绿色" data-desc="通常LCD显示器偶尔会有暗点(永远保持黑色)，请检查每个像素。注意屏幕上的灰尘有可能会被误认为坏点。" class="slide test" id="test-solid-green"></li>
 		<li data-title="纯蓝色" data-desc="通常LCD显示器偶尔会有暗点(永远保持黑色)，请检查每个像素。注意屏幕上的灰尘有可能会被误认为坏点。" class="slide test" id="test-solid-blue"></li>
 		<li data-title="纯黄色" data-desc="通常LCD显示器偶尔会有坏点(永远保持某一颜色)，请检查每个像素。" class="slide test" id="test-solid-yellow"></li>
 		<li data-title="纯青色" data-desc="通常LCD显示器偶尔会有坏点(永远保持某一颜色)，请检查每个像素。" class="slide test" id="test-solid-cyan"></li>
 		<li data-title="纯洋红色" data-desc="通常LCD显示器偶尔会有坏点(永远保持某一颜色)，请检查每个像素。" class="slide test" id="test-solid-magenta"></li>
-		<li data-title="纯白色" data-desc="除了用于测试坏点外，纯白屏通常用于测试显示器的亮度是否均衡，以及是否有不明显的色块存在。" class="slide test" id="test-solid-white"></li>
-		<li data-title="纯黑色" data-desc="除了用于测试坏点外，纯黑屏还常用于检查漏光水平。" class="slide test" id="test-solid-black"></li>
 		<li data-title="水平线1" data-desc="主要测试模拟信号的干扰水平，画面稳定的显示设备更佳。" class="slide test" id="test-horizontal-line-1px"></li>
 		<li data-title="水平线2" data-desc="主要测试模拟信号的干扰水平，画面稳定的显示设备更佳。" class="slide test" id="test-horizontal-line-2px"></li>
 		<li data-title="垂直线1" data-desc="主要测试模拟信号的干扰水平，画面稳定的显示设备更佳。" class="slide test" id="test-vertical-line-1px"></li>
@@ -202,7 +204,7 @@
 		<li data-title="绿色渐变" data-desc="用于测试显示器的色彩平滑程度，颜色过渡平滑的显示设备更佳。" class="slide test test-gradient" id="test-gradient-green"><img src="css/img/grey-gradient.png" /></li>
 		<li data-title="蓝色渐变" data-desc="用于测试显示器的色彩平滑程度，颜色过渡平滑的显示设备更佳。" class="slide test test-gradient" id="test-gradient-blue"><img src="css/img/grey-gradient.png" /></li>
 		<li data-title="饱和度" data-desc="用于测试屏幕的色彩饱和度，颜色过渡平滑的显示设备更佳。" class="slide test" id="test-saturation"><img src="css/img/saturation.png" /></li>
-		<li data-title="测试结束" data-desc="如在使用的过程中遇到问题，实在很不好意思，让您受苦了！！！请联系我。谢谢！" class="slide" id="test-last">测试结束</li>
+		<li data-title="测试结束" data-desc="如在使用的过程中遇到问题，实在很不好意思，让您受苦了！！！请联系我 jayscut [[at]] yeah.net 。如果您是美术设计，并愿意提升本站的UE而付出，请联系我。谢谢！" class="slide" id="test-last">测试结束</li>
 	</ul>
 	<div id="control" class="control_hide">
 		<div class="panel top">
@@ -229,4 +231,5 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 <!-- 2013-07-31 v1.3 加入preloader加快客户端载入测试图片的速度！ -->
 <!-- 2014-08-15 v1.4 使用百度托管的CDN加快jquery的加载速度 -->
 <!-- 2015-09-24 v1.5 增加浏览器全屏API支持，以后就不用手动F11全屏了 -->
+<!-- 2016-04-21 v1.6 居然有山寨版，从寨里面借鉴一些SEO建议 -->
 <!-- master -->

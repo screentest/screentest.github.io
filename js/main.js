@@ -32,7 +32,9 @@ $(document).ready(function(){
 		
 	var go = function(i) {
 		if (slide.length>0 && i>=0 && i<slide.length) {
-			location.hash = slide[i].id;
+            // location.hash = slide[i].id;
+            $(".slide").addClass("hide");
+            $("#" + slide[current_slide].id).removeClass("hide");
 			current_slide = i;
 			$("#control .top .title").text(slide[i].title);
 			$("#control .top .description").text(slide[i].description);

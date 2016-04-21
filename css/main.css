@@ -80,11 +80,7 @@ a { text-decoration: none;}
     height: 100%;
     position: relative;
     list-style:none;
-    display: none;
     z-index: 0;
-}
-.slide:target {
-    display: block;
 }
 .hide { display: none; }
 
@@ -181,7 +177,7 @@ a { text-decoration: none;}
 
 #welcome  { margin: 0; height: 100%; width: 100%; position: fixed; background-color: white; }
 #welcome  .wrapper { margin: 0 auto; width: 750px; margin: 0 auto; position: relative; }
-#welcome .top { position: absolute; top:48px; height: 400px; }
+#welcome .top { position: absolute; top:48px; height: 480px; }
 #welcome .left { width: 300px; border-right: 2px dashed black; left:0; }
 #welcome .left table { margin: 0 auto; border-spacing: 0; border: 3px solid #000; position: relative; top: 12px; }
 #welcome .left table td { font-family: SimHei, Arial, Helvetica, sans-serif; text-align: center; width: 240px; }
@@ -236,7 +232,7 @@ a { text-decoration: none;}
 }
 
 #welcome .right { width: 420px; right:0; padding: 12px; }
-#welcome .right .disclaimer { font-size: 9px; color: #DDD; }
+#welcome .right .disclaimer, #welcome .right .seo { font-size: 9px; color: #DDD; }
 
 #resolution_tips {
     background-color: rgba(0, 0, 0, 0.75);
